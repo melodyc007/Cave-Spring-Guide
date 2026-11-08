@@ -1,0 +1,293 @@
+@import "tailwindcss";
+
+:root {
+  --green: #1d5c3a;
+  --green-dark: #143f28;
+  --gold: #c9a227;
+  --cream: #faf6ee;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--cream);
+  color: #222;
+}
+
+a {
+  color: var(--green);
+}
+
+.site-header {
+  background: var(--green);
+  color: #fff;
+  padding: 1rem 1rem 0;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: #d9e8dd;
+}
+
+.site-title {
+  margin: 0.2rem 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+.header-note {
+  margin: 0 0 0.5rem;
+  font-style: italic;
+  color: #d9e8dd;
+}
+
+.nav {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  padding-bottom: 0.5rem;
+}
+
+.nav-link {
+  background: transparent;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.nav-link.active {
+  background: #fff;
+  color: var(--green-dark);
+  font-weight: bold;
+}
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.main h1 {
+  color: var(--green-dark);
+}
+
+.main h2 {
+  color: var(--green-dark);
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 0.25rem;
+  margin-top: 2rem;
+}
+
+.subhead {
+  color: var(--green-dark);
+  margin-top: 1.5rem;
+}
+
+.section-note {
+  background: #fff;
+  border-left: 4px solid var(--gold);
+  padding: 0.75rem;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--green);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.announcement {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.75rem 0;
+}
+
+.announcement-top {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: var(--green);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-water {
+  background: #1565a3;
+}
+
+.badge-meeting {
+  background: #6d4c41;
+}
+
+.badge-event {
+  background: #b3541e;
+}
+
+.badge-service {
+  background: #5b7a3a;
+}
+
+.announcement-date {
+  font-weight: bold;
+}
+
+.announcement-area {
+  font-style: italic;
+}
+
+.announcement-status {
+  font-size: 0.95rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 0.75rem 0;
+}
+
+.card h3 {
+  margin-top: 0.5rem;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.75rem;
+}
+
+.photo-placeholder {
+  background: linear-gradient(135deg, #2e7d4f, #8fb996);
+  color: #fff;
+  border-radius: 8px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.photo-label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.photo-sub {
+  font-style: italic;
+}
+
+.photo-note {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.button {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-secondary {
+  background: #fff;
+  color: var(--green-dark);
+  border: 2px solid var(--green);
+}
+
+.airbnb-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+form label {
+  display: block;
+  margin: 0.75rem 0;
+  font-weight: bold;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 0.6rem;
+  margin-top: 0.25rem;
+  border: 1px solid #999;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.success {
+  background: #e6f4ea;
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.site-footer {
+  background: var(--green-dark);
+  color: #d9e8dd;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #fff;
+}
