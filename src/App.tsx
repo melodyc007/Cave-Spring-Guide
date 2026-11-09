@@ -468,8 +468,13 @@ function SignupPage() {
 
   return (
     <>
-      <h1>Sign up for news</h1>
-      <p>Sign up to receive news about what&rsquo;s happening in Cave Spring!</p>
+      <h1>Sign up for Cave Spring news</h1>
+      <p>
+        Sign up to receive news about what&rsquo;s happening in Cave Spring —
+        events, announcements, and things to do — from the Historic Cave
+        Spring Downtown Development Authority. We&rsquo;ll only use your email
+        for Cave Spring news.
+      </p>
       {done ? (
         <p className="success">
           Thank you, {first}! You&rsquo;re signed up. (This sign-up is saved
