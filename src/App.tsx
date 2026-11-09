@@ -128,14 +128,6 @@ function HomePage({ go }: { go: (p: Page) => void }) {
 
       <section>
         <h2>Announcements</h2>
-        <p className="section-note">
-          Latest announcements from the City of Cave Spring —{" "}
-          <a href={CITY_NEWS_URL} target="_blank" rel="noreferrer">
-            cavespring.ga.gov/news
-          </a>
-          . Water outages are the most frequent, but this is every city
-          announcement, newest first.
-        </p>
 
         <h3 className="subhead">Active water notices</h3>
         {ACTIVE_WATER_NOTICES.map((item) => (
