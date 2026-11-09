@@ -360,9 +360,9 @@ export type Shop = {
 
 export const SHOPS: Shop[] = [
   { name: "graze — growcery & goods", note: "Grocery & goods", url: "https://www.facebook.com/graze.growcery.goods", photo: "/photos/graze.jpg", photoCredit: "Photo supplied by Melody Noyes" },
-  { name: "Christa's etc.", note: "Antiques, Collectibles, Jewelry" },
-  { name: "Bell House", note: "" },
-  { name: "Peddler", note: "" },
+  { name: "Christa's etc.", note: "Antiques, Collectibles, Jewelry", photo: "/photos/christas-etc.jpg", photoCredit: "Photo supplied by Melody Noyes" },
+  { name: "Bell House", note: "", photo: "/photos/bell-house.jpg", photoCredit: "Photo supplied by Melody Noyes" },
+  { name: "Peddler", note: "", photo: "/photos/peddler.jpg", photoCredit: "Photo supplied by Melody Noyes" },
   { name: "Evergreen on Broad", note: "Est. 2022" },
   { name: "Antiques on the Square", note: "" },
   { name: "General Store", note: "" },
