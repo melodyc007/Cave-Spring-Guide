@@ -299,6 +299,8 @@ export const RESTAURANTS: Restaurant[] = [
     address: "2 Alabama St",
     description: "Southern cooking in downtown Cave Spring.",
     hours: "Mon–Fri 11am–8pm",
+    photo: "/photos/southern-flavor.jpg",
+    photoCredit: "Photo supplied by Melody Noyes",
   },
   {
     name: "Linde Maries",
