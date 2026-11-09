@@ -315,12 +315,16 @@ export const RESTAURANTS: Restaurant[] = [
     address: "23 Cedartown St SW",
     description: "Creekside dining in Cave Spring.",
     hours: "Thu–Sat 11–3, Sun 11–8",
+    photo: "/photos/creekside.jpg",
+    photoCredit: "Photo supplied by Melody Noyes",
   },
   {
     name: "Local Joes",
     address: "6 Broad St",
     description: "Local Joe's in downtown Cave Spring.",
     hours: "Tue–Thu 10:30–8pm, Fri–Sat 10:30–9pm",
+    photo: "/photos/local-joes.jpg",
+    photoCredit: "Photo supplied by Melody Noyes",
   },
   {
     name: "Stagecoach Pizza",
