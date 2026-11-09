@@ -325,6 +325,8 @@ export const RESTAURANTS: Restaurant[] = [
     address: "24 Alabama St",
     description: "Pizza in downtown Cave Spring. Breakfast 7–10am on Saturday.",
     hours: "Thu–Fri 11–9, Sat 7–10 (breakfast 7–10am), Sun 12:30–6",
+    photo: "/photos/stagecoach-pizza.jpg",
+    photoCredit: "Photo supplied by Melody Noyes",
   },
   {
     name: "Spring Brew",
