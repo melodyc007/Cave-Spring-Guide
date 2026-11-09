@@ -223,6 +223,24 @@ a {
   font-style: italic;
 }
 
+.photo {
+  margin: 0;
+}
+
+.photo-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.photo-credit {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
 .photo-note {
   font-size: 0.8rem;
   opacity: 0.85;

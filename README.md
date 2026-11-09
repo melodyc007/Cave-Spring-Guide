@@ -55,12 +55,18 @@ What's Happening / Take a Tour links on subpages — that is fixed here.
 ## Photos — please read
 
 The photos in the Jotform app could **not** be retrieved as files, so
-they are **not** in this repo. Photo slots in the app are clearly marked
-“Photo to be added” (hero Rolater Park photo, Welcome Center & Museum
-building, restaurant photos/logos, shop tiles, Hearn Inn). No photo has
-been invented or substituted. Add the real photos from the Jotform app
-(or new ones) in Lovable, or drop them into `public/` and point the
-placeholders at them.
+they are **not** in this repo as local files. Three photos were added
+Nov 8, 2026, approved by Melody, as external links from Georgia's Rome
+(romegeorgia.org), with credit shown under each photo in the app:
+Rolater Park pond/cave (hero), Welcome Center & Museum, and The Hearn Inn.
+Local copies are kept in `public/photos/` for reference, but the app
+links to the Georgia's Rome URLs so the GitHub snapshot push (text-only)
+still works.
+
+All other photo slots are still clearly marked “Photo to be added”
+(restaurant photos/logos, shop tiles). No photo has been invented or
+substituted. Add the real photos from the Jotform app (or new ones) in
+Lovable, or drop them into `public/` and point the placeholders at them.
 
 ## Announcements — how they stay current
 

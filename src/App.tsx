@@ -40,6 +40,35 @@ function PhotoPlaceholder({ label, sub }: { label: string; sub?: string }) {
   );
 }
 
+function Photo({
+  src,
+  alt,
+  credit,
+}: {
+  src: string;
+  alt: string;
+  credit: string;
+}) {
+  return (
+    <figure className="photo">
+      <img className="photo-img" src={src} alt={alt} />
+      <figcaption className="photo-credit">{credit}</figcaption>
+    </figure>
+  );
+}
+
+// Photos below are linked from Georgia's Rome (romegeorgia.org), the
+// official Rome tourism site, with credit — approved by Melody Nov 8, 2026.
+// They are external URLs, not local files, so they survive a GitHub
+// snapshot push (which cannot carry binary images).
+const ROLATER_PHOTO =
+  "https://romegeorgia.org/wp-content/uploads/2025/08/park-pond-and-cave_edited.jpg";
+const WELCOME_CENTER_PHOTO =
+  "https://romegeorgia.org/wp-content/uploads/2025/07/1_Ucvbog-600x400.jpeg";
+const HEARN_INN_PHOTO =
+  "https://romegeorgia.org/wp-content/uploads/2025/07/hearn.jpeg";
+const PHOTO_CREDIT = "Photo: Georgia's Rome — romegeorgia.org";
+
 function AnnouncementCard({ item }: { item: Announcement }) {
   return (
     <article className="announcement">
@@ -66,7 +95,11 @@ function HomePage({ go }: { go: (p: Page) => void }) {
   return (
     <>
       <section className="hero">
-        <PhotoPlaceholder label="Rolater Park" sub="Stone bridge / spring" />
+        <Photo
+          src={ROLATER_PHOTO}
+          alt="Rolater Park pond with the stone cave entrance across the water"
+          credit={PHOTO_CREDIT}
+        />
         <h1>Cave Spring, Georgia</h1>
         <p className="tagline">a hidden gem off the beaten path.</p>
         <p>
@@ -122,7 +155,11 @@ function HomePage({ go }: { go: (p: Page) => void }) {
 
       <section>
         <h2>Welcome Center &amp; Museum</h2>
-        <PhotoPlaceholder label="Welcome Center & Museum" sub="4 Rome Road" />
+        <Photo
+          src={WELCOME_CENTER_PHOTO}
+          alt="Cave Spring Welcome Center & Museum front porch with its green sign"
+          credit={PHOTO_CREDIT}
+        />
         <p>
           <strong>4 Rome Road, Cave Spring, GA</strong>
           <br />
@@ -356,7 +393,11 @@ function StayPage() {
     <>
       <h1>Where to Stay</h1>
       <article className="card">
-        <PhotoPlaceholder label="The Hearn Inn" sub="13 Cedartown Street" />
+        <Photo
+          src={HEARN_INN_PHOTO}
+          alt="The Hearn Inn, a yellow historic inn in Cave Spring"
+          credit={PHOTO_CREDIT}
+        />
         <h3>The Hearn Inn</h3>
         <p>
           Historic inn in Rolater Park.
