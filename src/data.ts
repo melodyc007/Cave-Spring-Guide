@@ -377,7 +377,7 @@ export const SHOPS: Shop[] = [
   { name: "Peddler", note: "", photo: "/photos/peddler.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(706) 777-8608" },
   { name: "Evergreen on Broad", note: "Est. 2022", photo: "/photos/evergreen-on-broad.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(770) 250-1582" },
   { name: "Antiques on the Square", note: "", photo: "/photos/antiques-on-the-square.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(706) 381-5037" },
-  { name: "General Store", note: "", photo: "/photos/general-store.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(706) 331-2154" },
+  { name: "General Store", note: "Temporarily closed", photo: "/photos/general-store.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(706) 331-2154" },
   { name: "Pondora's Box", note: "Home Decor & More, Antiques", photo: "/photos/pondoras-box.jpg", photoCredit: "Photo supplied by Melody Noyes" },
   { name: "Rocky Hollow Patch at Angel Farm", note: "Cave Spring, GA / Centre, AL", photo: "/photos/rocky-hollow-patch.jpg", photoCredit: "Photo supplied by Melody Noyes" },
   { name: "Buttermilk Blooms", note: "Jackson Farms, Cave Spring, GA, Est. 2024", photo: "/photos/buttermilk-blooms.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(706) 618-6245" },
