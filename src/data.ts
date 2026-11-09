@@ -366,9 +366,9 @@ export const SHOPS: Shop[] = [
   { name: "Evergreen on Broad", note: "Est. 2022", photo: "/photos/evergreen-on-broad.jpg", photoCredit: "Photo supplied by Melody Noyes" },
   { name: "Antiques on the Square", note: "", photo: "/photos/antiques-on-the-square.jpg", photoCredit: "Photo supplied by Melody Noyes" },
   { name: "General Store", note: "", photo: "/photos/general-store.jpg", photoCredit: "Photo supplied by Melody Noyes" },
-  { name: "Pondora's Box", note: "Home Decor & More, Antiques" },
-  { name: "Rocky Hollow Patch at Angel Farm", note: "Cave Spring, GA / Centre, AL" },
-  { name: "Buttermilk Blooms", note: "Jackson Farms, Cave Spring, GA, Est. 2024" },
+  { name: "Pondora's Box", note: "Home Decor & More, Antiques", photo: "/photos/pondoras-box.jpg", photoCredit: "Photo supplied by Melody Noyes" },
+  { name: "Rocky Hollow Patch at Angel Farm", note: "Cave Spring, GA / Centre, AL", photo: "/photos/rocky-hollow-patch.jpg", photoCredit: "Photo supplied by Melody Noyes" },
+  { name: "Buttermilk Blooms", note: "Jackson Farms, Cave Spring, GA, Est. 2024", photo: "/photos/buttermilk-blooms.jpg", photoCredit: "Photo supplied by Melody Noyes" },
 ];
 
 export const EVENTS = [
