@@ -346,7 +346,15 @@ function RestaurantsPage() {
       </p>
       {RESTAURANTS.map((r) => (
         <article className="card" key={r.name}>
-          <PhotoPlaceholder label={r.name} sub={r.address} />
+          {r.photo ? (
+            <Photo
+              src={r.photo}
+              alt={`${r.name}, ${r.address}`}
+              credit={r.photoCredit || ""}
+            />
+          ) : (
+            <PhotoPlaceholder label={r.name} sub={r.address} />
+          )}
           <h3>{r.name}</h3>
           <p>{r.address}</p>
           <p>{r.description}</p>

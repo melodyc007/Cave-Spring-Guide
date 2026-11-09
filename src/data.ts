@@ -289,6 +289,8 @@ export type Restaurant = {
   address: string;
   description: string;
   hours: string;
+  photo?: string;
+  photoCredit?: string;
 };
 
 export const RESTAURANTS: Restaurant[] = [
@@ -303,6 +305,8 @@ export const RESTAURANTS: Restaurant[] = [
     address: "18 Broad St",
     description: "Best steaks in Floyd County.",
     hours: "Wed–Thu 4–8pm, Fri–Sat noon–9pm",
+    photo: "/photos/linde-maries.jpg",
+    photoCredit: "Photo supplied by Melody Noyes",
   },
   {
     name: "Creekside",
