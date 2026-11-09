@@ -128,6 +128,17 @@ function HomePage({ go }: { go: (p: Page) => void }) {
 
       <section>
         <h2>Announcements</h2>
+        <p>
+          For the very latest news, see the City of Cave Spring Facebook
+          page:{" "}
+          <a
+            href="https://www.facebook.com/CityofCaveSpringGa"
+            target="_blank"
+            rel="noreferrer"
+          >
+            City of Cave Spring on Facebook →
+          </a>
+        </p>
 
         <h3 className="subhead">Active water notices</h3>
         {ACTIVE_WATER_NOTICES.map((item) => (
@@ -141,17 +152,6 @@ function HomePage({ go }: { go: (p: Page) => void }) {
         <p>
           <a href={CITY_NEWS_URL} target="_blank" rel="noreferrer">
             See all announcements on the City website →
-          </a>
-        </p>
-        <p>
-          Latest news is also posted on the City of Cave Spring Facebook
-          page:{" "}
-          <a
-            href="https://www.facebook.com/CityofCaveSpringGa"
-            target="_blank"
-            rel="noreferrer"
-          >
-            City of Cave Spring on Facebook →
           </a>
         </p>
       </section>
