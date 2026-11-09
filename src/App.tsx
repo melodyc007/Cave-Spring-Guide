@@ -343,10 +343,6 @@ function RestaurantsPage() {
   return (
     <>
       <h1>Restaurants</h1>
-      <p className="section-note">
-        Phone numbers were not shown in the original guide — tap “Call” in
-        the original app, or look the restaurant up for the number.
-      </p>
       {RESTAURANTS.map((r) => (
         <article className="card" key={r.name}>
           {r.photo ? (
@@ -364,6 +360,12 @@ function RestaurantsPage() {
           <p>
             <strong>Hours:</strong> {r.hours}
           </p>
+          {r.phone ? (
+            <p>
+              <strong>Phone:</strong>{" "}
+              <a href={`tel:${r.phone.replace(/[^0-9]/g, "")}`}>{r.phone}</a>
+            </p>
+          ) : null}
         </article>
       ))}
     </>
@@ -393,6 +395,12 @@ function ShopPage() {
             )}
             <h3>{s.name}</h3>
             {s.note ? <p>{s.note}</p> : null}
+            {s.phone ? (
+              <p>
+                <strong>Phone:</strong>{" "}
+                <a href={`tel:${s.phone.replace(/[^0-9]/g, "")}`}>{s.phone}</a>
+              </p>
+            ) : null}
             {s.url ? (
               <p>
                 <a href={s.url} target="_blank" rel="noreferrer">
@@ -433,17 +441,9 @@ function StayPage() {
           </a>
         </p>
         <p>
-          <a
-            href="https://www.facebook.com/hearninn/"
-            target="_blank"
-            rel="noreferrer"
-            className="button"
-          >
-            Call the Hearn Inn
+          <a href="tel:7063812060" className="button">
+            Call the Hearn Inn — (706) 381-2060
           </a>
-        </p>
-        <p className="section-note">
-          No phone number was shown in the original guide.
         </p>
       </article>
 

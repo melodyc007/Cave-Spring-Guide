@@ -290,6 +290,7 @@ export type Restaurant = {
   address: string;
   description: string;
   hours: string;
+  phone?: string;
   photo?: string;
   photoCredit?: string;
 };
@@ -300,6 +301,7 @@ export const RESTAURANTS: Restaurant[] = [
     address: "2 Alabama St",
     description: "Southern cooking in downtown Cave Spring.",
     hours: "Mon–Fri 11am–8pm",
+    phone: "(706) 777-8707",
     photo: "/photos/southern-flavor.jpg",
     photoCredit: "Photo supplied by Melody Noyes",
   },
@@ -308,6 +310,7 @@ export const RESTAURANTS: Restaurant[] = [
     address: "18 Broad St",
     description: "Best steaks in Floyd County.",
     hours: "Wed–Thu 4–8pm, Fri–Sat noon–9pm",
+    phone: "(706) 381-2097",
     photo: "/photos/linde-maries.jpg",
     photoCredit: "Photo supplied by Melody Noyes",
   },
@@ -316,6 +319,7 @@ export const RESTAURANTS: Restaurant[] = [
     address: "23 Cedartown St SW",
     description: "Creekside dining in Cave Spring.",
     hours: "Thu–Sat 11–3, Sun 11–8",
+    phone: "(706) 381-2200",
     photo: "/photos/creekside.jpg",
     photoCredit: "Photo supplied by Melody Noyes",
   },
@@ -324,6 +328,7 @@ export const RESTAURANTS: Restaurant[] = [
     address: "6 Broad St",
     description: "Local Joe's in downtown Cave Spring.",
     hours: "Tue–Thu 10:30–8pm, Fri–Sat 10:30–9pm",
+    phone: "(706) 381-2223",
     photo: "/photos/local-joes.jpg",
     photoCredit: "Photo supplied by Melody Noyes",
   },
@@ -332,6 +337,7 @@ export const RESTAURANTS: Restaurant[] = [
     address: "24 Alabama St",
     description: "Pizza in downtown Cave Spring. Breakfast 7–10am on Saturday.",
     hours: "Thu–Fri 11–9, Sat 7–10 (breakfast 7–10am), Sun 12:30–6",
+    phone: "(706) 381-2038",
     photo: "/photos/stagecoach-pizza.jpg",
     photoCredit: "Photo supplied by Melody Noyes",
   },
@@ -340,6 +346,7 @@ export const RESTAURANTS: Restaurant[] = [
     address: "16 Alabama St",
     description: "Café and creamery. Coffee made with spring water.",
     hours: "Mon–Sat 9–6, Sun 12:30–5",
+    phone: "(706) 777-3999",
     photo: "/photos/spring-brew.jpg",
     photoCredit: "Photo supplied by Melody Noyes",
   },
@@ -348,6 +355,7 @@ export const RESTAURANTS: Restaurant[] = [
     address: "118 Gadsden Rd",
     description: "Mexican restaurant.",
     hours: "Mon–Fri 11am–9pm, Sat noon–9pm, Sun noon–8:30pm",
+    phone: "(706) 777-8875",
     photo: "/photos/la-cabana.jpg",
     photoCredit: "Photo supplied by Melody Noyes",
   },
@@ -357,21 +365,22 @@ export type Shop = {
   name: string;
   note: string;
   url?: string;
+  phone?: string;
   photo?: string;
   photoCredit?: string;
 };
 
 export const SHOPS: Shop[] = [
-  { name: "graze — growcery & goods", note: "Grocery & goods", url: "https://www.facebook.com/graze.growcery.goods", photo: "/photos/graze.jpg", photoCredit: "Photo supplied by Melody Noyes" },
-  { name: "Christa's etc.", note: "Antiques, Collectibles, Jewelry", photo: "/photos/christas-etc.jpg", photoCredit: "Photo supplied by Melody Noyes" },
+  { name: "graze — growcery & goods", note: "Grocery & goods", url: "https://www.facebook.com/graze.growcery.goods", photo: "/photos/graze.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(706) 237-9927" },
+  { name: "Christa's etc.", note: "Antiques, Collectibles, Jewelry", photo: "/photos/christas-etc.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(706) 777-3586" },
   { name: "Bell House", note: "", photo: "/photos/bell-house.jpg", photoCredit: "Photo supplied by Melody Noyes" },
-  { name: "Peddler", note: "", photo: "/photos/peddler.jpg", photoCredit: "Photo supplied by Melody Noyes" },
-  { name: "Evergreen on Broad", note: "Est. 2022", photo: "/photos/evergreen-on-broad.jpg", photoCredit: "Photo supplied by Melody Noyes" },
-  { name: "Antiques on the Square", note: "", photo: "/photos/antiques-on-the-square.jpg", photoCredit: "Photo supplied by Melody Noyes" },
-  { name: "General Store", note: "", photo: "/photos/general-store.jpg", photoCredit: "Photo supplied by Melody Noyes" },
+  { name: "Peddler", note: "", photo: "/photos/peddler.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(706) 777-8608" },
+  { name: "Evergreen on Broad", note: "Est. 2022", photo: "/photos/evergreen-on-broad.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(770) 250-1582" },
+  { name: "Antiques on the Square", note: "", photo: "/photos/antiques-on-the-square.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(706) 381-5037" },
+  { name: "General Store", note: "", photo: "/photos/general-store.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(706) 331-2154" },
   { name: "Pondora's Box", note: "Home Decor & More, Antiques", photo: "/photos/pondoras-box.jpg", photoCredit: "Photo supplied by Melody Noyes" },
   { name: "Rocky Hollow Patch at Angel Farm", note: "Cave Spring, GA / Centre, AL", photo: "/photos/rocky-hollow-patch.jpg", photoCredit: "Photo supplied by Melody Noyes" },
-  { name: "Buttermilk Blooms", note: "Jackson Farms, Cave Spring, GA, Est. 2024", photo: "/photos/buttermilk-blooms.jpg", photoCredit: "Photo supplied by Melody Noyes" },
+  { name: "Buttermilk Blooms", note: "Jackson Farms, Cave Spring, GA, Est. 2024", photo: "/photos/buttermilk-blooms.jpg", photoCredit: "Photo supplied by Melody Noyes", phone: "(706) 618-6245" },
 ];
 
 export const EVENTS = [
