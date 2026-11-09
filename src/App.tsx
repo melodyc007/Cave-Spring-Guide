@@ -379,7 +379,15 @@ function ShopPage() {
       <div className="shop-grid">
         {SHOPS.map((s) => (
           <article className="card shop-tile" key={s.name}>
-            <PhotoPlaceholder label={s.name} sub={s.note || undefined} />
+            {s.photo ? (
+              <Photo
+                src={s.photo}
+                alt={s.name}
+                credit={s.photoCredit || ""}
+              />
+            ) : (
+              <PhotoPlaceholder label={s.name} sub={s.note || undefined} />
+            )}
             <h3>{s.name}</h3>
             {s.note ? <p>{s.note}</p> : null}
             {s.url ? (

@@ -345,13 +345,21 @@ export const RESTAURANTS: Restaurant[] = [
     address: "118 Gadsden Rd",
     description: "Mexican restaurant.",
     hours: "Mon–Fri 11am–9pm, Sat noon–9pm, Sun noon–8:30pm",
+    photo: "/photos/la-cabana.jpg",
+    photoCredit: "Photo supplied by Melody Noyes",
   },
 ];
 
-export type Shop = { name: string; note: string; url?: string };
+export type Shop = {
+  name: string;
+  note: string;
+  url?: string;
+  photo?: string;
+  photoCredit?: string;
+};
 
 export const SHOPS: Shop[] = [
-  { name: "graze — growcery & goods", note: "Grocery & goods", url: "https://www.facebook.com/graze.growcery.goods" },
+  { name: "graze — growcery & goods", note: "Grocery & goods", url: "https://www.facebook.com/graze.growcery.goods", photo: "/photos/graze.jpg", photoCredit: "Photo supplied by Melody Noyes" },
   { name: "Christa's etc.", note: "Antiques, Collectibles, Jewelry" },
   { name: "Bell House", note: "" },
   { name: "Peddler", note: "" },
