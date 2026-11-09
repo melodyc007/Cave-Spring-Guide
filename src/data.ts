@@ -88,9 +88,10 @@ export const CITY_ANNOUNCEMENTS: Announcement[] = [
     title: "11/6/2026 Garbage Collection Update",
     category: "Service",
     area: "City of Cave Spring",
-    details: "Garbage collection update from the City of Cave Spring. See the City website for the full notice.",
-    status: "See City site for details",
-    url: "https://cavespring.ga.gov/news",
+    details:
+      "The City contacted its garbage service provider after some carts were missed on today's route. The provider had a truck issue, but crews will return tomorrow to complete the remaining route.",
+    status: "Crews returning tomorrow to finish the route",
+    url: "https://cavespring.ga.gov/news/1162026-garbage-collection-update",
   },
   {
     id: "news-2026-11-05-water-cr22",

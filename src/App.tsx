@@ -143,6 +143,17 @@ function HomePage({ go }: { go: (p: Page) => void }) {
             See all announcements on the City website →
           </a>
         </p>
+        <p>
+          Latest news is also posted on the City of Cave Spring Facebook
+          page:{" "}
+          <a
+            href="https://www.facebook.com/CityofCaveSpringGa"
+            target="_blank"
+            rel="noreferrer"
+          >
+            City of Cave Spring on Facebook →
+          </a>
+        </p>
       </section>
 
       <section>
