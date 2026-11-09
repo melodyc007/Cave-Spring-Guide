@@ -339,6 +339,8 @@ export const RESTAURANTS: Restaurant[] = [
     address: "16 Alabama St",
     description: "Café and creamery. Coffee made with spring water.",
     hours: "Mon–Sat 9–6, Sun 12:30–5",
+    photo: "/photos/spring-brew.jpg",
+    photoCredit: "Photo supplied by Melody Noyes",
   },
   {
     name: "La Cabana",
